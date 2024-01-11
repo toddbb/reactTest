@@ -1,0 +1,129 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /* outline: 1px solid yellow; */
+}
+
+body {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    height: 100svh;
+    width: 100svw;
+}
+
+#root {    
+    display: grid;
+    grid-template-columns: 300px 3fr;
+    height: 100%;
+    width: 100%;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+/**********************************************************/
+/****               PANEL                          ********/
+/**********************************************************/
+.panel {
+    flex-direction: column;
+    justify-content: center;
+    background-color: #F0F0F0;
+    padding: 5px;
+    border-right: #ccc;
+    box-shadow: 3px 0 6px -4px #777;
+}
+
+.panel-notes {
+    flex-direction: column;
+}
+
+
+/********* TEXT AREA *******************/
+.notecard {
+    display: flex;
+    align-items: center;
+    background-color: #Fefefe;
+    height: 70px;
+    width: 100%;
+    margin-top: 8px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.notecard-id {
+    display: grid;
+    place-items: center;
+    height: 25px;
+    width: 25px;
+    margin-right: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fefefe;
+}
+
+.notecard-summary {
+    width: 230px;
+    font-size: 0.8rem;
+    text-align: left;
+    overflow: none;
+}
+
+.btn-edit {
+    height: 20px;
+    width: 50px;
+    background-color: rgb(86, 216, 248);
+}
+.btn-edit:hover {
+    background-color: rgb(30, 209, 241);    
+}
+
+/**********************************************************/
+/****               MAIN                           ********/
+/**********************************************************/
+main {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/********* TEXT AREA *******************/
+textarea {
+    height: 500px;
+    width: 700px;
+    resize: none;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin: 15px 10px 10px 5px;
+    font-size: 1.2rem;
+    line-height: 32px;
+}
+
+/*********   BUTTON  *****************/
+button {
+    height: 40px;
+    width: 100px;
+    margin: 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.btn-primary:hover {
+    background-color: rgb(206, 17, 17);
+}
+
+.btn-primary {
+    background-color: firebrick;
+    color: white;
+}
+
+li {
+    text-decoration: none;
+    list-style: none;
+}
